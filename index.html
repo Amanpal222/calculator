@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <table>
+        <tr>
+          <td class="row" colspan="4">
+            <p><span id="output">0</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="clearAll()">C</button></td>
+          <td><button onclick="deleteLastDigit()"><-</button></td>
+          <td><button onclick="setOperator('%')">%</button></td>
+          <td><button onclick="setOperator('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="concatNumber('7');">7</button></td>
+          <td><button onclick="concatNumber('8');">8</button></td>
+          <td><button onclick="concatNumber('9');">9</button></td>
+          <td><button onclick="setOperator('*')">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="concatNumber('4');">4</button></td>
+          <td><button onclick="concatNumber('5');">5</button></td>
+          <td><button onclick="concatNumber('6');">6</button></td>
+          <td><button onclick="setOperator('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="concatNumber('1');">1</button></td>
+          <td><button onclick="concatNumber('2');">2</button></td>
+          <td><button onclick="concatNumber('3');">3</button></td>
+          <td><button onclick="setOperator('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="signChange()">+/-</button></td>
+          <td><button onclick="concatNumber('0');">0</button></td>
+          <td><button>.</button></td>
+          <td><button onclick="equals()">=</button></td>
+        </tr>
+      </table>
+    </section>
+    <script src="calculator.js"></script>
+  </body>
+</html>
